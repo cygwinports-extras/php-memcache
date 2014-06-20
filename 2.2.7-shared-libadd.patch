@@ -1,0 +1,10 @@
+--- origsrc/memcache-2.2.7/config9.m4	2012-09-22 20:51:08.000000000 -0500
++++ src/memcache-2.2.7/config9.m4	2014-06-19 21:59:48.406752000 -0500
+@@ -60,6 +60,7 @@ if test "$PHP_MEMCACHE" != "no"; then
+       PHP_ADD_LIBRARY_WITH_PATH(z, $PHP_ZLIB_DIR/lib, MEMCACHE_SHARED_LIBADD)
+     fi
+     PHP_ADD_INCLUDE($PHP_ZLIB_INCDIR)
++    PHP_SUBST(MEMCACHE_SHARED_LIBADD)
+   fi
+  
+   if test "$PHP_MEMCACHE_SESSION" != "no"; then 

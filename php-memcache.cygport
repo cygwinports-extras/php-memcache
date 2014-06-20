@@ -1,0 +1,15 @@
+PHP_CHANNEL="pecl"
+inherit php
+
+NAME="php-memcache"
+VERSION=3.0.8
+RELEASE=1
+CATEGORY="PHP"
+SUMMARY="Caching daemon for PHP"
+DESCRIPTION="Memcached is a caching daemon designed especially for dynamic
+web applications to decrease database load by storing objects in memory.
+This extension allows you to work with memcached through handy object-oriented
+and procedural interfaces."
+
+# http://www.mail-archive.com/cygwin-ports-general@lists.sourceforge.net/msg01345.html
+PATCH_URI="2.2.7-shared-libadd.patch"
