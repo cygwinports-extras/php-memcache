@@ -3,7 +3,7 @@ inherit php
 
 NAME="php-memcache"
 VERSION=3.0.8
-RELEASE=1
+RELEASE=2
 CATEGORY="PHP"
 SUMMARY="Caching daemon for PHP"
 DESCRIPTION="Memcached is a caching daemon designed especially for dynamic
@@ -12,4 +12,5 @@ This extension allows you to work with memcached through handy object-oriented
 and procedural interfaces."
 
 # http://www.mail-archive.com/cygwin-ports-general@lists.sourceforge.net/msg01345.html
+# https://bugs.php.net/bug.php?id=67483 (patch merged)
 PATCH_URI="2.2.7-shared-libadd.patch"
